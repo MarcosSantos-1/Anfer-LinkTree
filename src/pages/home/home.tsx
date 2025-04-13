@@ -79,8 +79,8 @@ export function Home() {
   return (
     <>
       <div className="w-full flex flex-col py-4 items-center justify-center">
-        <img className="h-40 w-40 object-contain mx-auto mt-20" src="/images/ANFER_LOGO.png" alt="logotipo da ANFER" />
-        <h1 className="font-bold text-3xl md:text-4xl ">ANFER Esquadrias Metálicas</h1>
+        <img className="h-40 w-40 object-contain mx-auto mt-15" src="/images/ANFER_LOGO.png" alt="logotipo da ANFER" />
+        <h1 className="font-bold text-3xl md:text-4xl text-center ">ANFER Esquadrias</h1>
         <span className="text-gray-50 mt-7 ">• Serralheria e Esquadrias Metálicas</span>
         <span className="text-gray-50 mt-1  max-w-md text-center"> • Fabricamos portões, grades, corrimãos e estruturas metálicas, seja industrial ou residencial.</span>
         <span className="text-gray-50 mt-1  max-w-md text-center"> • Desde  1️⃣9️⃣9️⃣5️⃣</span>
