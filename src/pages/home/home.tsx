@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa6';
 
 import { Social } from '../../assets/components/social';
 import { db } from '../../services/firebase-connection';
@@ -23,7 +23,7 @@ interface LinksProps {
 }
 interface SocialLinksProps {
   facebook: string;
-  Whatsapp: string;
+  whatsapp: string;
   instagram: string;
 }
 
@@ -56,7 +56,7 @@ export function Home() {
       if (snapshot.data() !== undefined) {
         setSocialLinks({
           facebook: snapshot.data()?.facebook,
-          Whatsapp: snapshot.data()?.Whatsapp,
+          whatsapp: snapshot.data()?.whatsapp,
           instagram: snapshot.data()?.instagram,
         });
       }
@@ -93,7 +93,7 @@ export function Home() {
               <Social url={socialLinks?.facebook}>
                 <FaFacebook className="text-white w-10 h-10 transition-transform hover:scale-110 cursor-pointer" />
               </Social>
-              <Social url={socialLinks?.Whatsapp}>
+              <Social url={socialLinks?.whatsapp}>
                 <FaWhatsapp className="text-white w-10 h-10 transition-transform hover:scale-110 cursor-pointer" />
               </Social>
               <Social url={socialLinks?.instagram}>
